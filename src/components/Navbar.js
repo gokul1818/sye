@@ -32,7 +32,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="row">
+        <div className="row ">
+        <div className="d-flex justify-content-between">
+
           <h1 className="logo">
             <Link
               spy={true}
@@ -41,7 +43,7 @@ function Navbar() {
               to="headerbg"
               style={{ cursor: "pointer" }}
             >
-              DarkLeas
+            SYE
             </Link>
           </h1>
           <ul className="bar">
@@ -100,6 +102,8 @@ function Navbar() {
             <div className="burger"></div>
           </div>
         </div>
+        </div>
+
       </div>
     </nav>
   );
