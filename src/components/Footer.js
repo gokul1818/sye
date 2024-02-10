@@ -10,39 +10,54 @@ function Footer() {
           <div className="side1">
             <div className="row">
               <div className="col-md-3">
-                <h1 className="logo">DarkLeas</h1>
+                <h1 className="logo">SRIMY ENGINEERING</h1>
                 <p className="footer-text">
                   Lorem ipsum Here are thriteen health benefits of apples Lorem
-        
+
                 </p>
               </div>
               <div className="col-md-3">
-                <p className="footer-title">Important Link</p>
+                <p className="footer-title">COMPANY</p>
                 <ul>
+
                   <li>
-                  <Link   
-                         spy={true}
-                         smooth={true}
-                         duration={1000}
-                         to="headerbg"
-                  > Home </Link>
+                    <Link to="services" spy={true} smooth={true} duration={100} > Services </Link>
+                    <Link to="products" spy={true} smooth={true} duration={100} > Products </Link>
+
                   </li>
                   <li>
-                  <Link to="services" spy={true} smooth={true} duration={1000} > Services </Link>
+                    <Link to="about-scroll" spy={true} smooth={true} duration={100}>About Us  </Link>
                   </li>
                   <li>
-                  <Link to="about-scroll" spy={true} smooth={true} duration={1000}>About Us  </Link>
+                    <Link to="contact" spy={true} smooth={true} duration={100}> Contact  </Link>
                   </li>
-                  <li>
-                  <Link to="contact" spy={true} smooth={true} duration={1000}> Contact  </Link>
-                  </li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <p className="footer-title">CONTACT</p>
+                <ul>
+                  <p className='footer-text'>
+                    srimyengineering@gmail.com
+                  </p>
+                  <p className='footer-text'>
+
+                    PADI
+                  </p>
+                  <p className='footer-text'>
+
+                    +91 97672687637
+                  </p>
                 </ul>
               </div>
             </div>
           </div>
           <div className="side2">
-            <div className="row">
-              <div className="col-md-3">
+            <div className="row justify-content-center">
+              <div className="col border-top boder text-center">
+                <p className="footer-text mb-0 mt-2 " style={{ fontSize: "12px" }}>Copyright 2024 | All Rights Reserved | Powered by DigitFellas</p>
+
+              </div>
+              {/* <div className="col-md-3">
                 <p className="footer-title">Contact</p>
                 <ul>
                   <li>
@@ -55,8 +70,8 @@ function Footer() {
                     <Link to="#" >0212 444 44 44</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="col-md-3">
+              </div> */}
+              {/* <div className="col-md-3">
                 <p className="footer-title">Social Media</p>
                 <ul>
                   <li>
@@ -69,7 +84,7 @@ function Footer() {
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/burhan-kocada%C4%9F-49a3331a5/"> Linkedin</a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

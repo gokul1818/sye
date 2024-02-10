@@ -76,7 +76,7 @@ code {
   color: white;
   font-weight: 500;
   z-index: 1;
-  background-color: #01bf71;
+  background-color: #145D7F;
   padding: 10px 50px;
   margin: 0 0.5rem;
 }
@@ -115,7 +115,9 @@ code {
 
 /* Navbar */
 .navopened {
-  background-color: #010606 !important;
+  background-color: #145D7F !important;
+  backdrop-filter: blur(27px);
+  
 }
 
 .navopened .logo {
@@ -137,7 +139,7 @@ code {
   width: 100%;
   padding: 0.5rem;
   background-color: rgb(0, 0, 0);
-  opacity: 0.8;
+  /* opacity: 0.8; */
   color: #fafafa;
   z-index: 2;
   backdrop-filter: blur(2px);
@@ -246,7 +248,7 @@ header h1 {
 /* main */
 .main-title {
   font-size: 48px;
-  color: #01bf71;
+  color: #145D7F;
 }
 
 .main-p {
@@ -268,7 +270,7 @@ main {
 .footer-top {
   margin: 0;
   padding: 0.1rem 0;
-  background-color: #01bf71;
+  background-color: #145D7F;
 }
 
 .footer-top p {
@@ -276,10 +278,10 @@ main {
 }
 
 .footer-text {
-  margin-top: 2.5px;
-
-  font-size: 18px;
-  color: #919191;
+  margin-top: 1.5px;
+  font-size: 16px;
+  margin-bottom: 0.5px;
+  color: #fafafa;
 }
 
 footer {
@@ -287,7 +289,7 @@ footer {
   height: auto;
   margin: 0;
   padding: 1rem 0;
-  background-color: #010606;
+  background-color: #145D7F;
 }
 
 .side1 {
@@ -346,14 +348,14 @@ footer ul {
 
 footer ul li a {
   text-decoration: none;
-  color: #919191;
+  color: #fafafa;
   font-size: 18px;
   font-weight: 500;
 }
 
 .gotop {
   transition: all 0.2s;
-  background-color: #01bf71;
+  background-color: #145D7F;
   position: fixed;
   border-radius: 25px;
   padding: 1rem;
@@ -371,7 +373,7 @@ footer ul li a {
 
 /* Services */
 .card-title {
-  color: #01bf71;
+  color: #145D7F;
   font-size: 24px;
 }
 
@@ -436,7 +438,7 @@ ul li a {
   max-width: 100% !important;
   outline: 0;
   border: 0;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(226, 224, 224, 0.76);
 
 }
 
@@ -451,7 +453,7 @@ ul li a {
   width: 100%;
   font-weight: 500;
   z-index: 1;
-  background-color: #01bf71;
+  background-color: #145D7F;
   padding: 10px 50px;
 
   transition: background-color 0.2s;
@@ -471,7 +473,7 @@ ul li a {
 
   outline: 0;
   border: 0;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(226, 224, 224, 0.76);
 
 }
 
@@ -489,7 +491,10 @@ ul li a {
   .navbar ul {
     margin-left: 5rem;
   }
-
+.main-title {
+  font-size: 28px;
+  color: #145D7F;
+}
   .container {
     max-width: 960px;
   }
@@ -576,7 +581,7 @@ ul li a {
   }
 
   .navopened ul {
-    top: 55px !important;
+    /* top: 55px !important; */
 
   }
 
