@@ -37,14 +37,19 @@ function Footer() {
                 <p className="footer-title">CONTACT</p>
                 <ul>
                   <p className='footer-text'>
-                    srimyengineering@gmail.com
+                    <i class="fas fa-envelope"></i>
+
+                    {"  "}  srimyengineering@gmail.com
                   </p>
                   <p className='footer-text'>
-
+                    <i class="fas fa-map-marker-alt"></i>
+                    {" "}
                     PADI
                   </p>
                   <p className='footer-text'>
 
+                    <i class="fa fa-phone"></i>
+                    {" "}
                     +91 97672687637
                   </p>
                 </ul>
@@ -89,7 +94,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <button onClick={() => scroll.scrollToTop(2500)} src="" className="gotop"><i className="fas fa-level-up-alt"></i></button>
+      <button onClick={() => scroll.scrollToTop(0)} src="" className="gotop"><i className="fas fa-level-up-alt"></i></button>
 
     </footer>
   );
