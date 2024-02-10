@@ -1,6 +1,6 @@
 import Card from "./Card";
 import test1 from "../assets/test1.jpg"
-function Services() {
+function Products() {
 
     const data = [
         {
@@ -35,8 +35,8 @@ function Services() {
         }
     ]
     return (
-        <div className="container pt-3 services">
-            <h2 className="main-title pt-5 text-center">SERVICES</h2>
+        <div className="container pt-3 products">
+            <h2 className="main-title pt-5 text-center">PRODUCTS</h2>
             <div className="card-cover">
                 <div className="col-md-12">
                     <div className="row d-flex justify-content-around align-items-center">
@@ -56,4 +56,4 @@ function Services() {
         </div >
     );
 }
-export default Services;
+export default Products;
