@@ -27,7 +27,7 @@ function Products() {
             img: "https://5.imimg.com/data5/SELLER/Default/2023/4/298188095/XQ/ES/JO/984762/packaging-machine-parts-500x500.jpeg"
         },
         {
-            img: "http://www.zephyr-marine.com/images/Impellers%20by%20sample.JPG"
+            img: "https://labworkmoto.com/cdn/shop/products/Primary-Drive-Clutch-Fits-For-10-14-Polaris-Ranger-800-Shaft-Size-29-5mm-one-way-LAB-WORK-MOTO-44.webp?v=1673359000"
         }
     ]
     return (
