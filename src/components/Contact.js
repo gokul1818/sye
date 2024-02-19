@@ -1,8 +1,9 @@
 function Contact() {
   
   return (
-    <div className="container contact">
-      <h2 className="main-title text-center">CONTACT</h2>
+    <div className="container contact ">
+      <div className="pt-5  pb-1"></div>
+      <h2 className="main-title text-center ">CONTACT</h2>
       <div className="col-md-12 -0">
         <div className="row justify-content-center align-item-center">
           <div className="col-md-3 ms-0 mb-1">

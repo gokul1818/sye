@@ -3,8 +3,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -39,8 +39,8 @@ code {
 .container {
   width: auto;
   max-width: 1300px;
-  padding-right: var(--bs-gutter-x, .75rem);
-  padding-left: var(--bs-gutter-x, .75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -55,8 +55,13 @@ code {
 }
 
 .img-fluid {
-  max-width: 60%;
-  width: 50%;
+  /* max-width: 80%; */
+  width: 270px;
+  height: 160px !important;
+  /* object-position: ; */
+  object-fit: fill;
+  border-radius: 5px;
+  /* object-fit: cover; */
 }
 
 .text-center {
@@ -76,7 +81,7 @@ code {
   color: white;
   font-weight: 500;
   z-index: 1;
-  background-color: #145D7F;
+  background-color: #145d7f;
   padding: 10px 50px;
   margin: 0 0.5rem;
 }
@@ -100,12 +105,10 @@ code {
 
 .col-md-4:first-child {
   margin-right: 1rem;
-
 }
 
 .col-md-4:last-child {
   margin-left: 1rem;
-
 }
 
 .x {
@@ -115,9 +118,8 @@ code {
 
 /* Navbar */
 .navopened {
-  background-color: #145D7F !important;
+  background-color: #145d7f !important;
   backdrop-filter: blur(27px);
-  
 }
 
 .navopened .logo {
@@ -182,7 +184,6 @@ code {
   text-decoration: none;
   color: rgb(243, 243, 243);
   font-weight: 500;
-
 }
 
 .button {
@@ -222,7 +223,6 @@ code {
   top: 0;
   background-color: black;
   opacity: 0.7;
-
 }
 
 header {
@@ -248,7 +248,7 @@ header h1 {
 /* main */
 .main-title {
   font-size: 48px;
-  color: #145D7F;
+  color: #145d7f;
 }
 
 .main-p {
@@ -270,7 +270,7 @@ main {
 .footer-top {
   margin: 0;
   padding: 0.1rem 0;
-  background-color: #145D7F;
+  background-color: #145d7f;
 }
 
 .footer-top p {
@@ -280,7 +280,7 @@ main {
 .footer-text {
   margin-top: 1.5px;
   font-size: 16px;
-  margin-bottom: 0.5px;
+  margin-bottom: 2.5px;
   color: #fafafa;
 }
 
@@ -289,7 +289,7 @@ footer {
   height: auto;
   margin: 0;
   padding: 1rem 0;
-  background-color: #145D7F;
+  background-color: #145d7f;
 }
 
 .side1 {
@@ -298,7 +298,6 @@ footer {
 
 .side2 {
   width: 50%;
-
 }
 
 footer .col-md-3 {
@@ -320,7 +319,6 @@ footer .logo {
 .logo a {
   text-decoration: none;
   color: #fafafa;
-
 }
 
 .d-flex {
@@ -355,7 +353,7 @@ footer ul li a {
 
 .gotop {
   transition: all 0.2s;
-  background-color: #145D7F;
+  background-color: #145d7f;
   position: fixed;
   border-radius: 25px;
   padding: 1rem;
@@ -368,13 +366,18 @@ footer ul li a {
   color: white;
   bottom: 20px;
   right: 15px;
-
+}
+.about-us-img {
+  width: 100%;
+  height: 50vh;
 }
 
 /* Services */
 .card-title {
-  color: #145D7F;
+  color: #145d7f;
   font-size: 24px;
+
+  /* margin: 0px; */
 }
 
 .p-3 {
@@ -385,14 +388,17 @@ footer ul li a {
   padding: 0rem 0rem 1rem 0rem;
   font-weight: 500;
   font-size: 18px;
-
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
 }
 
 .card {
   cursor: pointer;
   border-radius: 10px;
   width: 100%;
-  min-height: 400px;
+  max-height: 430px;
+  min-height: 430px;
+
   transition: all 0.2s;
   background-color: white;
   box-shadow: 5px 5px 5px 5px #e5e5e5;
@@ -400,12 +406,37 @@ footer ul li a {
 
 .card:hover {
   transform: scale(1.03);
+  box-shadow: 5px 5px 10px 5px #4f4e4e;
 }
 
+.products-card {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  /* max-height: 430px; */
+  min-height: 250px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px #e5e5e5;
+}
+
+.products-card:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 10px 5px #4f4e4e;
+}
+
+.products-img{
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .services .col-md-4 {
   margin: 1rem 1rem 1rem 1rem;
-
-
 }
 
 ul li a {
@@ -439,7 +470,6 @@ ul li a {
   outline: 0;
   border: 0;
   background-color: rgba(226, 224, 224, 0.76);
-
 }
 
 .form-btn {
@@ -453,7 +483,7 @@ ul li a {
   width: 100%;
   font-weight: 500;
   z-index: 1;
-  background-color: #145D7F;
+  background-color: #145d7f;
   padding: 10px 50px;
 
   transition: background-color 0.2s;
@@ -474,7 +504,6 @@ ul li a {
   outline: 0;
   border: 0;
   background-color: rgba(226, 224, 224, 0.76);
-
 }
 
 @media (max-width: 1300px) {
@@ -491,10 +520,10 @@ ul li a {
   .navbar ul {
     margin-left: 5rem;
   }
-.main-title {
-  font-size: 28px;
-  color: #145D7F;
-}
+  .main-title {
+    font-size: 28px;
+    color: #145d7f;
+  }
   .container {
     max-width: 960px;
   }
@@ -511,7 +540,6 @@ ul li a {
   .side2 .row {
     display: inline-block;
     width: 100%;
-
   }
 }
 
@@ -533,33 +561,27 @@ ul li a {
   .col-md-4 {
     width: 55.9% !important;
   }
-
 }
 
 @media (max-width: 576px) {
   .col-md-4:first-child {
     margin-right: 0;
-
   }
 
   .col-md-4:last-child {
     margin-left: 0;
-
   }
 
   .services .col-md-4 {
     margin: 2rem auto !important;
     width: 87.9% !important;
-
   }
 
   .col-md-4 {
-
     width: 100% !important;
   }
 
   .contact .col-md-4 {
-
     margin: none !important;
   }
 
@@ -577,12 +599,10 @@ ul li a {
 
   .side2 {
     width: 100%;
-
   }
 
   .navopened ul {
     /* top: 55px !important; */
-
   }
 
   .navopened {
@@ -606,14 +626,11 @@ ul li a {
   }
 
   header h1 {
-
     font-size: 44px;
   }
 
   .btn {
-
     padding: 10px 30px;
-
   }
 
   .container {
@@ -622,7 +639,6 @@ ul li a {
 
   .button {
     transform: translateX(0);
-
   }
 
   .navbar .logo {
@@ -668,7 +684,6 @@ ul li a {
     text-decoration: none;
     color: #fafafa;
     font-weight: 500;
-
   }
 
   .col-md-6 {

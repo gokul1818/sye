@@ -33,10 +33,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="row ">
+        <div className="row">
           <div className="d-flex justify-content-between align-items-center ">
 
-            <h1 className="logo">
+            <h1 className="logo d-flex align-items-center">
               <Link
                 spy={true}
                 smooth={true}
@@ -46,6 +46,7 @@ function Navbar() {
               >
                 <img src={logo} className="logoImg" />
               </Link>
+              <p className="mb-0 ms-3 fs-5 my-1">SRIMY ENGINEERING</p>
             </h1>
             <ul className="bar mt-2 mb-2">
               <li>
@@ -108,6 +109,18 @@ function Navbar() {
                   Contact
                 </Link>
               </li>
+              {/* <li>
+                <Link
+                  onClick={openBar}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  activeClass="active"
+                >
+                  Contact
+                </Link>
+              </li> */}
             </ul>
             <div className="button" onClick={openBar}>
               <div className="burger"></div>
