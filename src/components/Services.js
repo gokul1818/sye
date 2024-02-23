@@ -46,9 +46,9 @@ function Services() {
             <h2 className="main-title pt-5 text-center">SERVICES</h2>
             <div className="card-cover">
                 <div className="col-md-12">
-                    <div className="row d-flex justify-content-start align-items-start">
+                    <div className="row card-aligmnet">
                         {data.map((item, index) => (
-                            <div key={index} className="col-md-4 m-0 mb-4">
+                            <div key={index} className="col-md-4  m-0 mb-4">
                                 <Card
                                     title={item?.title}
                                     img={item?.img}

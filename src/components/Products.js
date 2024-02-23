@@ -35,7 +35,7 @@ function Products() {
             <h2 className="main-title pt-5 text-center">PRODUCTS</h2>
             <div className="card-cover">
                 <div className="col-md-12">
-                    <div className="row d-flex justify-content-around align-items-center">
+                    <div className="row card-aligment ">
                         {data.map((item, index) => (
                             <div key={index} className="col-md-4 m-0 mb-4">
                                 <ProductsCard
